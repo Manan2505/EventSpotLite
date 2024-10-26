@@ -2,14 +2,14 @@ import React from 'react'
 
 const Navbar = () => {
   return (
-    <div className='mx-9 flex justify-between'>
-      <div>
+    <div className='lg:mx-9 mx-2 flex justify-between'>
+      <div className=''>
         <img src="https://pnghq.com/wp-content/uploads/spot-logo-png-transparent-svg-vector-png-photo-2048x2048.png" alt="" width="80px" />
       </div>
-      <ul className='flex gap-7 items-center text-lg font-medium'>
-        <li>Our work</li>
-        <li>About us</li>
-        <li>Insights</li>
+      <ul className='flex gap-7 items-center text-lg font-medium group'>
+        <li className='hover:text-red-500 cursor-pointer'>Our work</li>
+        <li className='hover:text-red-500 cursor-pointer'>About us</li>
+        <li className='hover:text-red-500 cursor-pointer'>Insights</li>
       </ul>
     </div>
   )

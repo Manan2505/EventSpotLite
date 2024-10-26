@@ -21,12 +21,12 @@ const About = () => {
 
       <div className='w-full h-1 bg-gray-600 mt-20'></div>
         <div className='flex lg:flex-row flex-col items-center justify-between mx-32'>
-            <div className='font-bold text-5xl pt-20'>
+            <div className='font-bold lg:text-5xl text-3xl'>
                 Our approach:
             </div>
 
-            <div className='rounded-lg'>
-                <img src="https://ochi.design/wp-content/uploads/2022/05/Homepage-Photo-663x469.jpg" className='py-20 rounded-2xl' alt="" />
+            <div className=''>
+                <img src="https://ochi.design/wp-content/uploads/2022/05/Homepage-Photo-663x469.jpg" className='py-20' alt="" />
             </div>
         </div>
     </div>

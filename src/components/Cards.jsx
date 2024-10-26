@@ -8,7 +8,7 @@ const Cards = () => {
   );
   return (
     <div data-scroll-container data-scroll data-scroll-section data-scroll-speed="0.4" className='bg-stone-400'>
-      <h1 className='font-["Neue_Montreal"] text-6xl'>ALL  EVENTS</h1>
+      <h1 className='font-["Neue_Montreal"] text-6xl italic'>ALL  EVENTS</h1>
       <div>
       <input 
         type="text" 
