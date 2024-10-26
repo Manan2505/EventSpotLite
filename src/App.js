@@ -1,23 +1,25 @@
 import logo from './logo.svg';
 import './App.css';
-
+import Hero from './components/Hero';
+import { useState } from 'react';
+import {events} from './components/data/events'
+import Card from './components/Card';
+import Cards from './components/Cards'
+import Navbar from './components/Navbar';
+import Approach from './components/Approach';
+import Eyes from './components/Eyes';
+import About from './components/About';
+import LocomotiveScroll from 'locomotive-scroll';
 function App() {
+  const locomotiveScroll=new LocomotiveScroll();
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App bg-gray-100">
+      <Navbar/>
+      <Hero/>
+    <Approach title="PACK YOUR BAGS" />
+    <About />
+    <Cards/>
     </div>
   );
 }
