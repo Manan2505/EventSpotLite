@@ -1,12 +1,14 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-
+import Approach from './Approach';
+import About from './About';
+import Cards from './Cards';
 const Hero = () => {
   return (
-    <div data-scroll-container data-scroll data-scroll-section data-scroll-speed="-.2" className='min-h-screen pt-16 md:pt-20 px-4 relative'>
-      <div className='max-w-[1080px] mx-auto'>  
-        {/* Animated heading with overflow hidden to prevent horizontal scroll */}
-        <div className='overflow-hidden mb-4'>
+    <div className=''>
+    <div  data-scroll data-scroll-section data-scroll-speed="-.3"  className='min-h-screen box-border pt-16 md:pt-20 px-4 '>
+    <div className=''>
+      <div className='max-w-[1080px] mx-auto overflow-hidden pb-9'>          
           <motion.h1 
             initial={{ x: "100%" }} 
             animate={{ x: "-100%" }} 
@@ -17,20 +19,18 @@ const Hero = () => {
           </motion.h1>
         </div>
         
-        {/* Main heading */}
-        <span className='block font-bold text-3xl sm:text-4xl md:text-5xl text-red-600 animate-pulse mb-4'>
+        <div>
+        <span className='block font-bold text-3xl sm:text-4xl md:text-5xl text-red-600 animate-pulse lg:pt-8'>
           Find Your Next Adventure
         </span>
 
-        {/* Subheading */}
-        <p className='font-medium tracking-wide text-base sm:text-lg md:text-xl max-w-2xl mx-auto'>
+        <p className='font-medium tracking-wide text-base sm:text-lg md:text-xl max-w-2xl mx-auto pt-2'>
           Never miss out on what your city has to offer – discover, plan, and create memories that last a lifetime.
         </p>
-      </div>
-    
-      {/* Features section */}
-      <div className='mt-16 md:mt-32'>
-        <div className='border-t-2 border-red-500'></div>
+        </div>
+        <div className='lg:mt-32  border-t-2 border-red-500'></div>
+
+        <div className=''>
         <ul className='flex flex-col sm:flex-row justify-between gap-4 py-6 px-4 md:px-9 text-base md:text-xl font-medium italic'>
           <li className='text-center sm:text-left'>"Curated Local Experiences"</li>
           <li className='text-center sm:text-left'>Real-time Updates</li>
@@ -38,8 +38,15 @@ const Hero = () => {
         </ul>
       </div>
 
-     
-    </div>
+        </div>
+      
+      </div>
+
+       <Approach title="PACK YOUR BAGS" />
+       <About/>
+       <Cards/>
+      </div>
+    
   );
 };
 

@@ -51,7 +51,7 @@ export const events = [
     image: "https://www.sampoornayoga.com/wp-content/uploads/2021/03/shutterstock_707620921_2.jpg",
   },
   {
-    id: 12,
+    id: 7,
     name: "Christmas Market",
     date: "2024-12-23",
     location: "Main Square",

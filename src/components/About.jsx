@@ -3,7 +3,7 @@ import Approach from './Approach'
 
 const About = () => {
   return (
-    <div data-scroll-container data-scroll data-scroll-section data-scroll-speed="-.4" className='rounded-3xl bg-[#e3e7d6]'>
+    <div  data-scroll data-scroll-section data-scroll-speed="-.2" className='rounded-3xl bg-[#e3e7d6]'>
       <div className='font-bold lg:text-5xl text-3xl'>
       Dive into a world of endless possibilities with EventSpot Lite. From electrifying concerts to intimate art galleries.
       </div>

@@ -10,16 +10,21 @@ import Approach from './components/Approach';
 import Eyes from './components/Eyes';
 import About from './components/About';
 import LocomotiveScroll from 'locomotive-scroll';
+import { Routes,BrowserRouter,Route } from 'react-router-dom';
+import Details from './components/Details';
 function App() {
   const locomotiveScroll=new LocomotiveScroll();
   
   return (
     <div className="App bg-gray-100">
+      <BrowserRouter>
       <Navbar/>
-      <Hero/>
-    <Approach title="PACK YOUR BAGS" />
-    <About />
-    <Cards/>
+      <Routes>
+      <Route path="/" element={<Hero/>}></Route>
+      <Route path="/event/:eventId" element={  <Details/>}></Route>
+      </Routes>
+      {/* <Approach title="PACK YOUR BAGS"/> */}
+    </BrowserRouter>
     </div>
   );
 }
