@@ -1,6 +1,6 @@
 import React from 'react'
 import Approach from './Approach'
-
+import {motion} from 'framer-motion'
 const About = () => {
   return (
     <div  data-scroll data-scroll-section data-scroll-speed="-.2" className='rounded-3xl bg-[#e3e7d6]'>
@@ -9,9 +9,9 @@ const About = () => {
       </div>
       <div className='w-full h-1 bg-gray-600 mt-20'></div>
       <div className='flex lg:flex-row flex-col gap-9 justify-evenly mx-20 items-center'>
-        <div className='font-["Neue_Montreal"] text-xl'>
+        <motion.div initial={{x:"-100%"}} animate={{x:"0"}} transition={{ease:"linear",duration:2}} className='font-["Neue_Montreal"] text-xl'>
         What you can expect:
-        </div>
+        </motion.div>
         <div className='flex flex-col gap-10 lg:max-w-[30%] font-["Neue_Montreal"] text-xl'>
             <p>
             We provide detailed event information with rich media content.Direct connection with event organizers.</p>
