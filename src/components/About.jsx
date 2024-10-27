@@ -9,9 +9,9 @@ const About = () => {
       </div>
       <div className='w-full h-1 bg-gray-600 mt-20'></div>
       <div className='flex lg:flex-row flex-col gap-9 justify-evenly mx-20 items-center'>
-        <motion.div initial={{x:"-100%"}} animate={{x:"0"}} transition={{ease:"linear",duration:2}} className='font-["Neue_Montreal"] text-xl'>
+        <div className='font-["Neue_Montreal"] text-xl'>
         What you can expect:
-        </motion.div>
+        </div>
         <div className='flex flex-col gap-10 lg:max-w-[30%] font-["Neue_Montreal"] text-xl'>
             <p>
             We provide detailed event information with rich media content.Direct connection with event organizers.</p>
@@ -26,7 +26,8 @@ const About = () => {
             </div>
 
             <div className=''>
-                <img src="https://ochi.design/wp-content/uploads/2022/05/Homepage-Photo-663x469.jpg" className='py-20' alt="" />
+              <iframe src="https://www.youtube.com/embed/aHomAnMezME?autoplay=1&mute=1&controls=0" width="560" height="315" frameborder="0" className='hidden lg:block my-28'></iframe>
+                <img src="https://d38b044pevnwc9.cloudfront.net/cutout-nuxt/enhancer/3.jpg" className='py-20 inline-block lg:hidden h-auto w-full' alt="" />
             </div>
         </div>
     </div>

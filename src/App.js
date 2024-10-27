@@ -13,18 +13,7 @@ import LocomotiveScroll from 'locomotive-scroll';
 import { Routes,BrowserRouter,Route } from 'react-router-dom';
 import Details from './components/Details';
 function App() {
-  useEffect(() => {
-    const locomotive = new LocomotiveScroll({
-      el: document.querySelector('data-scroll-container'),
-      smooth: true,
-      scrollSpeed: 0.1,
-    });
-
-    return () => {
-      locomotive.destroy(); 
-    };
-  }, []);
-  
+    const locomotive = new LocomotiveScroll();
   return (
     <div data-scroll-container className="App bg-gray-100">
       <BrowserRouter>
