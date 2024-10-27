@@ -1,7 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import Hero from './components/Hero';
-import { useState } from 'react';
+import { useState,useEffect } from 'react';
 import {events} from './components/data/events'
 import Card from './components/Card';
 import Cards from './components/Cards'
@@ -13,10 +13,20 @@ import LocomotiveScroll from 'locomotive-scroll';
 import { Routes,BrowserRouter,Route } from 'react-router-dom';
 import Details from './components/Details';
 function App() {
-  const locomotiveScroll=new LocomotiveScroll();
+  useEffect(() => {
+    const locomotive = new LocomotiveScroll({
+      el: document.querySelector('data-scroll-container'),
+      smooth: true,
+      scrollSpeed: 0.1,
+    });
+
+    return () => {
+      locomotive.destroy(); 
+    };
+  }, []);
   
   return (
-    <div className="App bg-gray-100">
+    <div data-scroll-container className="App bg-gray-100">
       <BrowserRouter>
       <Navbar/>
       <Routes>

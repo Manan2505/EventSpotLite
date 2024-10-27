@@ -30,7 +30,7 @@ const Card = ({id,name,description,image,date,location}) => {
                 <p className="">{description}</p>
                 </div>
                 <div>
-              <Link to={`event/${id}`}><button className='w-full bg-blue-600 text-white py-2 px-6 rounded-xl hover:bg-blue-700 transition-colors duration-200 text-lg font-semibold mt-6'>More Details</button></Link>
+              <Link to={`event/${id}`}><button onClick={()=>window.scroll(0,0)} className='w-full bg-blue-600 text-white py-2 px-6 rounded-xl hover:bg-blue-700 transition-colors duration-200 text-lg font-semibold mt-6'>More Details</button></Link>
               </div> 
       </div>
     
