@@ -40,7 +40,7 @@ export const events = [
     date: "2024-12-01",
     location: "Artistic Studio",
     description: "Hone your photography skills with guidance from professional photographers.",
-    image: "https://photographyworkshopsatlanta.com/wp-content/uploads/2020/04/TRE_6182-Copy-1(pp_w768_h512).jpg",
+    image: "https://images.squarespace-cdn.com/content/v1/587a6823d2b8579268904c29/1492034322659-W9IRIE90SQG82VX2V86X/ke17ZwdGBToddI8pDm48kG87Sfbgg29A4BYEDq3OXvgUqsxRUqqbr1mOJYKfIPR7LoDQ9mXPOjoJoqy81S2I8N_N4V1vUb5AoIIIbLZhVYxCRW4BPu10St3TBAUQYVKcf4OxbJOyh_wHUnyc4kQLQ6SBshRGOku7c30Y_IRDNPta8R2IY5BHMaEj1zOWoDTZ/ASOPPhotoshootEdits-17.jpg",
   },
   {
     id: 6,
